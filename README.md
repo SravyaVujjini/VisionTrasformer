@@ -10,7 +10,8 @@ The flowchart above depicts the architecture of the implemented ViT model.
 
 ### Input Processing
 
-- The ViT model takes an input image of size H x W x C, where H and W are the height and width of the image, and C is the number of channels (typically 3 for RGB images and 1 for grayscale images).
-- The image is divided into a grid of nonoverlapping patches, where each patch is of size P x P x C.
-- The patch size P is a hyperparameter that can be tuned depending on the task and the size of the input image. Each patch is flattened into a vector of size P x P x C, which represents the features within that patch. 
+- Input images are divided into fixed-sized patches and treated as individual tokens which are flattened to 1D sequence and linearly projected to lower dimensional space.
+- Below is the example of an input image divided into patches.
+![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/a9b62f34-7bd4-4ea5-9d9d-34d25e0e50d4)
+
 
