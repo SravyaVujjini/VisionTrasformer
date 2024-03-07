@@ -29,6 +29,14 @@ The flowchart above depicts the architecture of the implemented ViT model.
 
 ![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/1d4407b1-e3cd-47ff-a9a6-ef86f4983e2c)
 
+This base model implementation consists of 2 encoder blocks with approx. 2.5M parameters unlike the original ViT base implementation that contains 86M parameters.
+
+- Key parameters used: Embed dimensions: 128, Hidden layers: 256, MLP heads: 4, patch size: 4.
+
+## Results
+
+![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/0575b310-3df8-45b0-aec1-b99b44f175ba)
+
 
 
 
