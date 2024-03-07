@@ -2,10 +2,15 @@
 
 Implemented the base model of the Vision Transformer Architecture based on the research paper https://arxiv.org/pdf/2010.11929.pdf for the image classification purposes. 
 
-### Architecture
+## Architecture
 
 ![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/ba103744-e01c-4e57-8a80-74319ddba446)
 
+The flowchart above depicts the architecture of the implemented ViT model.
 
+### Input Processing
 
-Vision Transformers (ViTs) have been the major focus in the field of computer vision, after they have demonstrated promising results in natural language processing. In this project, we have implemented a vision transformer using PyTorch for image classification, with a focus on efficiency and reduced complexity. The motivation behind ViTs is the need for object recognition models that can handle variable-sized inputs and model long-range dependencies. While CNNs have been successful in this field, we explored the potential of vision transformers and aimed to reduce their computational overhead. The focus of this project is towards the following research question: Can we reduce the complexity of the model while maintaining decent accuracy? Our base model consists of minimal encoder blocks and a reduced number of parameters, which enabled us to perform training using little computational complexity. We were able to achieve good results with just 15-20 training epochs. We tested our model on different types of classification tasks which includes datasets such as CIFAR10, MNIST, and Satellite Imagery. The performance of our base model on MNIST and Satellite Imagery have been significant with an accuracy of about 91% on MNIST and 85% on Satellite Imagery. Additionally, we performed hyperparameter tuning to further improve the efficiency of the base model. We further tried various techniques such as augmentation, etc. and commented a few findings regarding the same. In a nutshell, we have demonstrated that a simplified vision transformer can still achieve good results in image classification tasks for simpler datasets.
+- The ViT model takes an input image of size H x W x C, where H and W are the height and width of the image, and C is the number of channels (typically 3 for RGB images and 1 for grayscale images).
+- The image is divided into a grid of nonoverlapping patches, where each patch is of size P x P x C.
+- The patch size P is a hyperparameter that can be tuned depending on the task and the size of the input image. Each patch is flattened into a vector of size P x P x C, which represents the features within that patch. 
+
