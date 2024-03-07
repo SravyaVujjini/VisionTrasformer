@@ -1,4 +1,6 @@
-# VisionTransformer
+# Implementation of an Efficient Vision Transformer
+
+Implemented the base model of the Vision Transformer Architecture based on the research paper https://arxiv.org/pdf/2010.11929.pdf
 
 ### Project Overview 
 
