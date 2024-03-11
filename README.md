@@ -14,7 +14,6 @@ The flowchart above depicts the architecture of the implemented ViT model.
 - Below is an example of the input image divided into patches.
   
 ![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/a9b62f34-7bd4-4ea5-9d9d-34d25e0e50d4)
-![image](https://github.com/SravyaVujjini/Image-Classification-using-ViT/assets/121740546/19ede4a7-4e79-49f9-84d4-f6fa35287d62)
 
 - Positional Encoding is applied to embedded patches, thereby capturing the spatial information of each patch
 
