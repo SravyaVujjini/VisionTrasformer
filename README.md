@@ -14,6 +14,7 @@ The flowchart above depicts the architecture of the implemented ViT model.
 - Below is an example of the input image divided into patches.
   
 ![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/a9b62f34-7bd4-4ea5-9d9d-34d25e0e50d4)
+![image](https://github.com/SravyaVujjini/Image-Classification-using-ViT/assets/121740546/19ede4a7-4e79-49f9-84d4-f6fa35287d62)
 
 - Positional Encoding is applied to embedded patches, thereby capturing the spatial information of each patch
 
@@ -22,7 +23,7 @@ The flowchart above depicts the architecture of the implemented ViT model.
 - Encoder block is the key component in transformer-based architecture, that performs self-attention, and captures complex features and dependencies from the input.
 - The self-attention layer takes in the sequence of patch embeddings as input and computes a new set of embeddings by attending to all the other patches in the sequence
 - This is followed by the feedforward layer which takes the attention output as the input and applies two linear transformations, followed by a non-linear activation function (ReLU)
-- 
+  
 ### MLP Classifier
 
 - The resulting sequence of patch embeddings is fed into a multi-layer perceptron (MLP) classifier which consists of one or more fully connected layers with the non-linear activation function GELU. 
@@ -34,6 +35,8 @@ This base model implementation consists of 2 encoder blocks with approx. 2.5M pa
 - Key parameters used: Embed dimensions: 128, Hidden layers: 256, MLP heads: 4, patch size: 4.
 
 ## Results
+
+![image](https://github.com/SravyaVujjini/Image-Classification-using-ViT/assets/121740546/42b9d912-be76-4a24-b823-c4463dbc17d3)
 
 ![image](https://github.com/SravyaVujjini/VisionTransformer/assets/121740546/0575b310-3df8-45b0-aec1-b99b44f175ba)
 
